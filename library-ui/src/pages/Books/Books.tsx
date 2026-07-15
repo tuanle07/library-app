@@ -381,7 +381,7 @@ export function Books() {
                   <TableCell>Book</TableCell>
                   <TableCell>Owner</TableCell>
                   <TableCell>Status</TableCell>
-                  <TableCell align="right">Actions</TableCell>
+                  <TableCell align="center">Actions</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
