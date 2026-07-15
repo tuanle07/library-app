@@ -1,0 +1,10 @@
+bin/
+obj/
+node_modules/
+dist/
+.tmp/
+.dotnet-home/
+.vs/
+.vscode/
+*.user
+*.suo
