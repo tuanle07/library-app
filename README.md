@@ -121,9 +121,9 @@ Important prompts used during the project included:
 - "Add a theme for the UI with primary colour = #1b2b1d and secondary colour = #ff7230 and use Rethink Sans as font-family".
 - "Add api.ts file that corresponds to the library-api endpoints responses and use axios"
 - "Use MUI table component to display the list of books including title, author name, owner, status and actions (including borrow, return and delete icons) on desktop. On mobile devices please use card component instead."
-- "Create add a book modal on the UI upon clicking on Add a book button."
-- "Create borrow a book modal upon clicking on Borrow button."
-- "Create add employee modal upon clicking on add employee button"
+- "Open add a book modal upon clicking on Add a book button."
+- "Open borrow a book modal upon clicking on Borrow button."
+- "Open add employee modal upon clicking on add employee button"
 - "Connect the frontend to the ASP.NET Core API using a configurable Vite environment variable for the API base URL."
 - "Add validation and user-friendly feedback for book and employee forms."
 - "Update the README with setup instructions, available scripts, API endpoints, and notes about how the app works."
