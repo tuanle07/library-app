@@ -9,7 +9,7 @@ import {
   TextField,
 } from '@mui/material';
 import { FormEvent } from 'react';
-import { CreateEmployeeRequest } from '../types';
+import { CreateEmployeeRequest } from '../../types';
 
 interface AddEmployeeDialogProps {
   form: CreateEmployeeRequest;

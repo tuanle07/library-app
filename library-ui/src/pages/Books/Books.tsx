@@ -38,10 +38,10 @@ import {
   getBooks,
   getEmployees,
   returnBook,
-} from '../api';
-import { AddBookDialog } from '../components/AddBookDialog';
-import { AddEmployeeDialog } from '../components/AddEmployeeDialog';
-import { BorrowBookDialog } from '../components/BorrowBookDialog';
+} from '../../api';
+import { AddBookDialog } from '../../components/AddBookDialog';
+import { AddEmployeeDialog } from '../../components/AddEmployeeDialog';
+import { BorrowBookDialog } from '../../components/BorrowBookDialog';
 import {
   Book,
   BookStatus,
@@ -50,7 +50,8 @@ import {
   CreateEmployeeRequest,
   Employee,
   PagedResponse,
-} from '../types';
+} from '../../types';
+import './Books.css';
 
 const statusOptions: Array<BookStatus | 'All'> = ['All', BookStatus.Available, BookStatus.Borrowed];
 
@@ -307,6 +308,7 @@ export function Books() {
               </Tooltip>
             </Stack>
           </Box>
+          {/** Book grid view for mobile screens */}
           <Box className="book-grid">
             {books.map((book) => (
               <Paper className="book-card" elevation={0} key={book.id}>
@@ -371,6 +373,7 @@ export function Books() {
               </Paper>
             ))}
           </Box>
+          {/** Book table view for larger screens */}
           <TableContainer component={Paper} className="book-table" elevation={0}>
             <Table size="small" aria-label="Books">
               <TableHead>

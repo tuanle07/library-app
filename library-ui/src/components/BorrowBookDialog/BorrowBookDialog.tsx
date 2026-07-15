@@ -14,7 +14,8 @@ import {
   Typography,
 } from '@mui/material';
 import { FormEvent } from 'react';
-import { Book, BorrowBookRequest, Employee } from '../types';
+import { Book, BorrowBookRequest, Employee } from '../../types';
+import './BorrowBookDialog.css';
 
 interface BorrowBookDialogProps {
   book: Book | null;
@@ -60,7 +61,7 @@ export function BorrowBookDialog({
               />
               <Tooltip title="Add employee">
                 <IconButton
-                  className="employee-add-button"
+                  className="borrow-book-dialog-employee-button"
                   color="primary"
                   onClick={onOpenEmployeeDialog}
                 >

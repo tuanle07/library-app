@@ -13,7 +13,8 @@ import {
   Tooltip,
 } from '@mui/material';
 import { FormEvent } from 'react';
-import { CreateBookRequest, Employee } from '../types';
+import { CreateBookRequest, Employee } from '../../types';
+import './AddBookDialog.css';
 
 interface AddBookDialogProps {
   employees: Employee[];
@@ -75,7 +76,7 @@ export function AddBookDialog({
               />
               <Tooltip title="Add employee">
                 <IconButton
-                  className="employee-add-button"
+                  className="add-book-dialog-employee-button"
                   color="primary"
                   onClick={onOpenEmployeeDialog}
                 >
